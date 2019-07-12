@@ -1,0 +1,98 @@
+/* Base Settings */
+html, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+body > * { position: absolute; color: #505050; }
+input:focus, button:focus { outline: none; }
+
+/* Header Area */
+#header { left: 0; top: 0; width: 100%; height: 14vw; background-color: #ededed; }
+
+#back, #info, #keyboard, #dummy {
+    width: 17%;
+    height: 14vw;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+#back, #info { left: 0; top: 0; }
+#keyboard, #dummy { right: 0; top: 0; }
+#dummy { opacity: 0; }
+
+#tryCount, #bestScore, #appTitle {
+    font-weight: bold;
+    text-align: center;
+    line-height: 14vw;
+    vertical-align: middle;
+}
+#tryCount { left: 17%; top: 0; width: 24%; height: 14vw; font-size: 0.84em; }
+#bestScore { right: 17%; top: 0; width: 42%; height: 14vw; font-size: 0.84em; }
+#appTitle { left: 17%; top: 0; width: 66%; height: 14vw; font-size: 1.1em; }
+
+/* Content Area */
+#creator, #comment {
+    font-weight: bold;
+    text-align: center;
+    line-height: 8vw;
+    vertical-align: middle;
+}
+#creator { left: 0; top: 28vw; width: 100%; height: 8vw; font-size: 1.1em; }
+#comment { left: 0; top: 44vw; width: 100%; height: 16vw; font-size: 0.8em; }
+#start { left: 18%; top: 68vw; width: 64%; height: 14vw; font-weight: bold; }
+
+#answerPopup {
+    right: 9%;
+    top: 44vw;
+    width: 20%;
+    height: 12vw;
+    font-size: 0.88em;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f4f4f4;
+    border: 2px solid gray;
+    border-radius: 12px;
+}
+
+#answerPopup::after {
+    position: absolute;
+	left: 30%;
+	top: 100%;
+	margin-left: -12px;
+	content: "";
+	border-width: 12px;
+	border-style: solid;
+	border-color: gray transparent transparent transparent;
+}
+
+#card {
+    left: 35%;
+    top: 36vw;
+    width: 30%;
+    height: 45vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #dfdfdf;
+    border-radius: 12px;
+}
+
+/* Card Images */
+/* For performance improvement, images should be applied immediately when the page loads to force the browser to make all GET requests at a time */
+.backside { background-image: url("../image/card_backside.png"); }
+.heartA { background-image: url("../image/heart_A.png"); }
+.heart2 { background-image: url("../image/heart_2.png"); }
+.heart3 { background-image: url("../image/heart_3.png"); }
+.heart4 { background-image: url("../image/heart_4.png"); }
+.heart5 { background-image: url("../image/heart_5.png"); }
+.heart6 { background-image: url("../image/heart_6.png"); }
+.heart7 { background-image: url("../image/heart_7.png"); }
+.heart8 { background-image: url("../image/heart_8.png"); }
+.heart9 { background-image: url("../image/heart_9.png"); }
+
+/* Element States */
+.gone { display: none; }
+.hidden { visibility: hidden; }
+.nosize { width: 0; height: 0; }

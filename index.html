@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html data-version="1.0.0">
+<head>
+    <meta charset="utf-8" />
+    <title>Reaction Time Test</title>
+    <meta name="description" content="Test how fast you can react to a card flip!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <script src="js/ismobile_min.js"></script> <!-- isMobile -->
+    <script src="js/jquery_min.js"></script> <!-- jQuery -->
+    <script src="js/check_ismobile.js"></script> <!-- isMobile Check -->
+
+    <link rel="stylesheet" href="css/reset.css" /> <!-- CSS Reset -->
+    <link rel="stylesheet" href="css/main.css" /> <!-- Main CSS -->
+    <script src="js/wg_storage.js"></script> <!-- Prepare WebGame Storage -->
+    <script src="js/main.js"></script> <!-- Main JS -->
+</head>
+<body>
+    <div id="resourceLoader nosize hidden">
+        <div class="backside"></div>
+        <div class="heartA"></div>
+        <div class="heart2"></div>
+        <div class="heart3"></div>
+        <div class="heart4"></div>
+        <div class="heart5"></div>
+        <div class="heart6"></div>
+        <div class="heart7"></div>
+        <div class="heart8"></div>
+        <div class="heart9"></div>
+    </div>
+    <div id="header"></div>
+    <button id="back">뒤로</button>
+    <button id="info">정보</button>
+    <div id="tryCount"></div>
+    <div id="bestScore"></div>
+    <div id="appTitle">순발력 테스트</div>
+    <button id="keyboard">키보드<br>오픈</button>
+    <input id="dummy" type="tel" />
+    <div id="creator">제작자 : Syusa</div>
+    <div id="comment">카드에 적힌 숫자를 최대한 빨리 맞히는 게임입니다.<br>2~9 그리고 A가 있으며, A는 숫자 1로 간주됩니다.</div>
+    <button id="start">게임 시작</button>
+    <div id="card" class="backside gone"></div>
+    <div id="answerPopup" class="hidden"></div>
+</body>
+</html>
